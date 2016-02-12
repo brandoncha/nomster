@@ -116,17 +116,17 @@
 	<button class="btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="#photoModal">
   		Add a Photo
 	</button>
-		<div class="clear"></div>
+</div>
+	<div class="clear"></div>
+	<div class="col-xs-12 col-xs-offset-1 col-sm-6">
 	<% @place.photos.each do |photo| %>
-	<% if photo.present? %>
 		<%=image_tag photo.picture %>
 		<blockquote>
 			<%= photo.caption %>
 		</blockquote>	
-			
 	<% end %>
-	<% end %>
-	</div>
+</div>
+		
 
 
 
