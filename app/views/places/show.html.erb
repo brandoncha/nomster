@@ -118,14 +118,15 @@
 	</button>
 </div>
 	<div class="clear"></div>
-	<div class="col-xs-12 col-xs-offset-1 col-sm-6">
 	<% @place.photos.each do |photo| %>
+	<div class="col-xs-12 col-xs-offset-1 col-sm-6">
 		<%=image_tag photo.picture %>
 		<blockquote>
 			<%= photo.caption %>
 		</blockquote>	
+	</div>
 	<% end %>
-</div>
+
 		
 
 
